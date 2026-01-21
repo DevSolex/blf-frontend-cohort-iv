@@ -1,0 +1,5 @@
+.menu {
+    display: flex;
+    justify-content: left;
+    background-color: rgb(81, 120, 204);
+}
