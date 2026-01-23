@@ -1,5 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    padding-left: 15px;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 .menu {
     display: flex;
-    justify-content: left;
-    background-color: rgb(81, 120, 204);
+    flex-direction: column;
+    justify-content: space-between;
 }
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    justify-content:center;
+}
+
+
+ .current-balance {
+    width: 250px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+ }
+
+ .income {
+    width: 250px;
+    height: 100px;
+    background-color: rgb(207, 210, 212);
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+ }
+
+ .expenses {
+    width: 250px;
+    height: 100px;
+    background-color: rgb(207, 210, 212);
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+ }
+
+.overview {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.pot {
+    width: 450px;
+    height: 180px;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.transaction {
+    width: 450px;
+    height: 600px;
+    color: black;
+    border-radius: 15px;
+}
+
+.budget {
+    width: 200px;
+    height: 350px;
+    color: black;
+    border-radius: 15px;
+}
+
+.recurring-bills {
+    width: 200px;
+    height: 150px;
+    color: black;
+    border-radius: 15px;
+}
+
