@@ -1,111 +1,472 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-    background-color: white;
+  min-height: 100vh;
+  background-color: #F8F4EF;
 }
 
 aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100vh;
-    padding-left: 15px;
-    background-color: black;
-    color: white;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #201F24;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  height: 250px;
 }
-.menu-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 250px;
-    margin-top: 20px;
+
+.sideBarH {
+  font-size: 16px;
+  margin-bottom: 30px;
+  padding: 18px;
+  color: #F8F4EF;
+}
+
+.sideBarLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sideBarLinks .sideBarLink {
+  display: block;
+  text-decoration: none;
+  color: #cbd5f5;
+  padding: 18px;
+}
+
+.sideBarOver .sideBarOverA{
+  display: flex;
+  padding: 18px;
+  text-decoration: none;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  color: #000;
+  width: 230px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 5px solid rgb(0, 113, 128);
+}
+
+ .sideBarLink:hover {
+  background-color: #fff;
+  color: #000;
+  width: 230px;
+  padding: 18px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 5px solid rgb(0, 113, 128);
+}
+
+.sideBarLinkM .sideBarMenu {
+  display: flex;
+  font-weight: 500;
+  margin-top: 280px;
+  padding: 18px;
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+.sideBarMenu:hover {
+  background-color: #fff;
+  color: #000;
+  width: 230px;
+  padding: 18px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 5px solid rgb(0, 113, 128);
 }
 
 main {
-    display: flex;
-    justify-content:center;
+  margin-left: 260px;
+  padding: 20px;
+}
+
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 18px;
+}
+
+.overviewContents {
+  display: flex;
+  margin-top: 14px;
+  gap: 20px;
+  align-items: center;
+}
+
+.currentCard {
+  background-color: #000;
+  width: 400px;
+  border-radius: 12px;
+  padding: 18px;
+  color: #fff;
+}
+
+.currentH {
+  font-size: 12px;
+  word-spacing: 2px;
+  padding: 4px;
+}
+
+.currentP {
+  font-size: 1.8em;
+  font-weight: 700;
+  padding: 4px;
+}
+
+.incomeCards {
+  background-color: #fff;
+  width: 400px;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.incomeH {
+  font-size: 12px;
+  word-spacing: 2px;
+  padding: 4px;
+}
+
+.incomeP {
+  font-size: 1.8em;
+  font-weight: 700;
+  padding: 4px;
+}
+
+.overviewCards {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px;
+   gap: 20px;
+}
+
+.overviewCards1{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.card1 {
+  background-color: #fff;
+  width: 610px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.potsCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.potsCardDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.potsCardTotal {
+  background-color: #F8F4EF;
+  width: 250px;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.potsCardTotalP {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  color: #B3B0A6;
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.span{
+  font-size: 2em;
+  font-weight: 700;
+  color: #000;
+  margin-top: 10px;
+}
+
+.potsCardSavings {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #317874;
+  color: #B3B0A6;
+  font-size: 16px;
+  padding: 6px;
+}
+
+.potsCardGift {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #646271;
+  color: #B3B0A6;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 6px;
+}
+
+.potsCardTicket {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #81C7D3;
+  color: #B3B0A6;
+  font-size: 16px;
+  padding: 6px;
+}
+
+.potsCardLaptop {
+  display: flex;
+  flex-direction: column;
+  color: #B3B0A6;
+  border-left: 4px solid #EBCFB4;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 6px;
+}
+
+.spans{
+   font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 8px;
+}
+
+.transactionCard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card2 {
+  background-color: #fff;
+  width: 610px;
+  padding: 20px;
+  height: 430px;
+  border-radius: 12px;
+}
+
+.transactionDetails{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  margin-top: 20px;
+  border-bottom: 1px solid #cbd5f5;
+}
+
+.transactionDetailsI{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 20px;
+}
+
+img{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.transactionCardP{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.transactionCardA{
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionCardAp{
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  color: #317874;
+}
+
+.transactionCardS{
+  font-size: 12px;
+  font-weight: 700;
+  color: #646271;
+}
+
+.overviewCards2{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.card3{
+  background-color: #fff;
+  width: 560px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.budgetsCard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+
+.budgetsCardDetails{
+  display: flex;
+  flex-flow: row;
+  margin-top: 20px;
+}
+
+.budgetsCardC{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-left: 30px solid #646271;
+  border-right: 30px solid #81C7D3;
+  border-top: 30px solid  #317874;
+  border-bottom: 30px solid #F8F4EF;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
 }
 
 
- .current-balance {
-    width: 250px;
-    height: 100px;
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    margin-right: 30px;
- }
-
- .income {
-    width: 250px;
-    height: 100px;
-    background-color: rgb(207, 210, 212);
-    color: black;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    margin-right: 30px;
- }
-
- .expenses {
-    width: 250px;
-    height: 100px;
-    background-color: rgb(207, 210, 212);
-    color: black;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
- }
-
-.overview {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.budgetsCardSavings {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #317874;
+  color: #B3B0A6;
+  font-size: 16px;
+  padding: 6px;
 }
 
-.pot {
-    width: 450px;
-    height: 180px;
-    color: black;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
+.budgetsCardGift {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #646271;
+  color: #B3B0A6;
+  margin-top: 6px;
+  font-size: 16px;
+  padding: 6px;
 }
 
-.transaction {
-    width: 450px;
-    height: 600px;
-    color: black;
-    border-radius: 15px;
+.budgetsCardTicket {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #81C7D3;
+  color: #B3B0A6;
+  font-size: 16px;
+  padding: 6px;
+  margin-top: 4px;
 }
 
-.budget {
-    width: 200px;
-    height: 350px;
-    color: black;
-    border-radius: 15px;
+.budgetsCardLaptop {
+  display: flex;
+  flex-direction: column;
+  color: #B3B0A6;
+  border-left: 4px solid #EBCFB4;
+  font-size: 16px;
+  margin-top: 6px;
+  padding: 6px;
 }
 
-.recurring-bills {
-    width: 200px;
-    height: 150px;
-    color: black;
-    border-radius: 15px;
+.budgetsCardp{
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.budgetsCardS{
+  font-size: 12px;
+  color: #646271;
+  text-align: center;
+}
+
+.budgetsCardDetailsD{
+  display: flex;
+  flex-flow: column;
+}
+
+.card4{
+  background-color: #fff;
+  width: 560px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.billsCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.billsCardD{
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.billsCardp{
+  background-color: #F8F4EF;
+  padding: 22px;
+  border-radius: 10px;
+  border-left: 4px solid #317874;
+}
+
+
+.billsCardpb{
+  display: flex;
+  justify-content: space-between;
+   color: #646271;
+}
+
+.billsCardb{
+  background-color: #F8F4EF;
+  padding: 22px;
+  border-radius: 10px;
+  border-left: 4px solid #EBCFB4;
+}
+
+.billsCardbr{
+  display: flex;
+   color: #646271;
+  justify-content: space-between;
+}
+
+.billsCardd{
+  background-color: #F8F4EF;
+  padding: 22px;
+  border-radius: 10px;
+  border-left: 4px solid #317874;
+}
+
+.billsCarddb{
+  display: flex;
+  justify-content: space-between;
+  color: #646271;
 }
 

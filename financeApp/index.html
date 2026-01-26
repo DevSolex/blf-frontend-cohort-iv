@@ -1,238 +1,182 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            finance
-        </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <aside>
-            <div class="menu">
-                    <h1>
-                        finance
-                    </h1>
-                    <div class="menu-content">
-                        <h5>
-                            Overview
-                        </h5>
-                        <h5>
-                            Transaction
-                        </h5>
-                        <h5>
-                            Budget
-                        </h5>
-                        <h5>
-                            Pots
-                        </h5>
-                        <h5>
-                            Recurring Bills
-                        </h5>
-                    </div>
-                    <small>
-                        Minimize Menu
-                    </small>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <aside>
+        <div class="sideBar">
+            <div class="sideBarH">
+                <h1>Finance</h1>
             </div>
-        </aside>
-        <main>
-            <div class="main-body">
-                <section id="Overview">
-                    <h1>
-                        Overview
-                    </h1>
-                    <div class="overview">
-                        <div class="current-balance">
-                            <h5>
-                                Current Balance <br>
-                                <span>
-                                    <b>$4,836.00</b>
-                                </span>
-                            </h5>
-                        </div>
-                        <div class="income">
-                            <h5>
-                                Income <br>
-                                <span>
-                                    <b>$3,814.25</b>
-                                </span>
-                            </h5>
-                        </div>
-                        <div class="expenses">
-                            <h5>
-                                Expenses <br>
-                                <span>
-                                    <b>$1,700.50</b>
-                                </span>
-                            </h5>
-                        </div>
-                    </div>
-                </section>
-                <section id="Pot">
-                    <div class="pot">
-                        <h5>
-                            <b>Pot</b> <a href="">See Details</a>
-                        </h5>
-                        <div>
-                            <h5>
-                            <small>
-                                Total saved
-                            </small>
-                            <span>
-                                $850
-                            </span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Savings</small>
-                                <span>
-                                    $159
-                                </span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Concert Ticket</small>
-                                <span>
-                                    $110
-                                </span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Gift</small>
-                                <span>
-                                    $40
-                                </span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>New Laptop</small>
-                                <span>
-                                    $10
-                                </span>
-                            </h5>
-                        </div>
-                    </div>
-                </section>
-                <section id="Transaction">
-                    <div class="transaction">
-                        <p>
-                            <b>Transaction</b> <a href="">View All</a> 
-                        </p>
-                        <div>
-                            <h5>
-                                <b>Emma Richardson</b> 
-                                <span>+$75.50</span>
-                                <small>19 Aug 2024</small>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <b>Savory Bites Bistro</b> 
-                                <span>-$55.50</span>
-                                <small>19 Aug 2024</small>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <b>Danial Carter</b> 
-                                <span>-$42.30</span>
-                                <small>18 Aug 2024</small>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <b>Sun Park</b> 
-                                <span>+$120.00</span>
-                                <small>17 Aug 2024</small>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <b>Urban Services Hub</b> 
-                                <span>-$65.00</span>
-                                <small>17 Aug 2024</small>
-                            </h5>
-                        </div>
-                    </div>
-                </section>
-                <section id="Budget">
-                    <div class="budget">
-                        <h5>
-                            <b>Budget</b> <a href="">See Details</a> 
-                        </h5>
-                        <div>
-                            <h5>
-                                <b>$338</b> of $975 limit
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Entertainment</small> <br>
-                                <span>
-                                    <b>$50.00</b>
-                                </span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Bills</small>  <br>
-                                <span>
-                                    <b>$750.00</b>
-                                </span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Dining Out</small> <br>
-                                <span>
-                                    <b>$75.00</b>
-                                </span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Personal Care</small> <br>
-                                <span>
-                                    <b>$100.00</b>
-                                </span>
-                            </h5>
-                        </div>
-                    </div>
-                </section>
-                <section id="Recurring_Bills">
-                    <div class="recurring-bills">
-                        <h5>
-                            Recurring Bills 
-                            <small>
-                                <a href="">See Details</a>
-                            </small> 
-                        </h5>
-                        <div>
-                            <h5>
-                                <small>Paid Bills</small>
-                                 <span>+$190.00</span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Total Upcoming</small> 
-                                <span>+$194.98</span>
-                            </h5>
-                        </div>
-                        <div>
-                            <h5>
-                                <small>Due Soon</small> 
-                                <span>+$59.98</span>
-                            </h5>
-                        </div>
-                    </div>
-                </section>
+            <div class="sideBarLinks">
+                <div class="sideBarOver">
+                    <i class="bx bx-home-alt-2"></i>
+                    <a href="#" class="sideBarOverA">Overview</a>
+                </div>
+                <div>
+                    <a href="#" class="sideBarLink"><i class="bx bx-home-alt-2"></i> Transactions</a>
+                </div>
+                <div>
+                    <a href="#" class="sideBarLink"><i class="bx bx-home-alt-2"></i> Budget</a>
+                </div>
+                <div>
+                    <a href="#" class="sideBarLink"><i class="bx bx-home-alt-2"></i> Pots</a>
+                </div>
+                <div>
+                    <a href="#" class="sideBarLink"><i class="bx bx-home-alt-2"></i> Recurring Bills</a>
+                </div>
             </div>
-        </main>
-    </body>
+            <div class="sideBarLinkM">
+                <a href="#" class="sideBarMenu">Minimize Menu</a>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="overviewContainer">
+            <h2 style="font-size: 1.8em">Overview</h2>
+            <div class="overviewContents">
+                <div class="currentCard">
+                    <h3 class="currentH">Current Balance</h3>
+                    <p class="currentP">$4,900.00</p>
+                </div>
+                <div class="incomeCards">
+                    <h3 class="incomeH">Income</h3>
+                    <p class="incomeP">$3,100.00</p>
+                </div>
+                <div class="incomeCards">
+                    <h3 class="incomeH">Expenses</h3>
+                    <p class="incomeP">$1,900.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="overviewCards">
+            <div class="overviewCards1">
+                <div class="card1">
+                    <div class="potsCard">
+                        <h2>Pots</h2>
+                        <p>See Details</p>
+                    </div>
+                    <div class="potsCardDetails">
+                        <div class="potsCardTotal">
+                            <p class="potsCardTotalP">
+                                Total Save <span class="span">$850</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="potsCardSavings">
+                                Savings <span class="spans">$450</span>
+                            </p>
+                            <p class="potsCardGift">Gift <span class="spans">$40</span></p>
+                        </div>
+                        <div>
+                            <p class="potsCardTicket">
+                                Concert Ticket <span class="spans">$200</span>
+                            </p>
+                            <p class="potsCardLaptop">
+                                New Laptop <span class="spans">$10</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="transactionCard">
+                        <h2>Transactions</h2>
+                        <p>View All</p>
+                    </div>
+                    <div class="transactionDetails">
+                        <div class="transactionDetailsI">
+                            <img src="assets/IMG-20250304-WA0052.jpg" alt="image">
+                            <p class="transactionCardP">Lere Dakshak</p>
+                        </div>
+                        <div>
+                            <p class="transactionCardAp">+$85.55<span class="transactionCardS">22 Jan 2026</span></p>
+                        </div>
+                    </div>
+                    <div class="transactionDetails">
+                        <div class="transactionDetailsI">
+                            <img src="assets/IMG-20250304-WA0052.jpg" alt="image">
+                            <p class="transactionCardP">Praise Dapal</p>
+                        </div>
+                        <div>
+                            <p class="transactionCardA">-$43.55<span class="transactionCardS">22 Jan 2026</span></p>
+                        </div>
+                    </div>
+                    <div class="transactionDetails">
+                        <div class="transactionDetailsI">
+                            <img src="assets/IMG-20250304-WA0052.jpg" alt="image">
+                            <p class="transactionCardP">Kanke Deshi</p>
+                        </div>
+                        <div>
+                            <p class="transactionCardA">-$38.50<span class="transactionCardS">22 Jan 2026</span></p>
+                        </div>
+                    </div>
+                    <div class="transactionDetails">
+                        <div class="transactionDetailsI">
+                            <img src="assets/IMG-20250304-WA0052.jpg" alt="image">
+                            <p class="transactionCardP">Samuel Nanbam Luka</p>
+                        </div>
+                        <div>
+                            <p class="transactionCardAp">+$88.55<span class="transactionCardS">22 Jan 2026</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overviewCards2">
+                <div class="card3">
+                    <div class="budgetsCard">
+                        <h2>Budgets</h2>
+                        <p>See Details</p>
+                    </div>
+                    <div class="budgetsCardDetails">
+                        <div class="budgetsCardC">
+                            <p class="budgetsCardp">+$88.55<span class="budgetsCardS">22 Jan 2026</span></p>
+                        </div>
+                        <div class="budgetsCardDetailsD">
+                            <div>
+                                <p class="budgetsCardSavings">
+                                    Savings <span class="spans">$450</span>
+                                </p>
+                                <p class="budgetsCardGift">Gift <span class="spans">$40</span></p>
+                            </div>
+                            <div>
+                                <p class="budgetsCardTicket">
+                                    Concert Ticket <span class="spans">$200</span>
+                                </p>
+                                <p class="budgetsCardLaptop">
+                                    New Laptop <span class="spans">$10</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card4">
+                    <div class="billsCard">
+                        <h2>Recurring Bills</h2>
+                        <p>See Details</p>
+                    </div>
+                    <div class="billsCardD">
+                        <div class="billsCardp">
+                            <p class="billsCardpb">Paid bills <span class="spans">$1400.00</span></p>
+                        </div>
+                          <div class="billsCardb">
+                            <p class="billsCardbr">Balance Remaining <span class="spans">$1000.00</span></p>
+                        </div>
+                          <div class="billsCardd">
+                            <p class="billsCarddb">Due Balance <span class="spans">$800.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>
