@@ -2,34 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 20px 270px;
-  background-color: #ffffff;
+  padding: 20px;
+  margin: 0px 200px;
 }
 
-header img {
-    height: 50px;
-}
-
-nav {
+.navbar{
   display: flex;
+  gap: 20px;
   align-items: center;
-  gap: 16px; 
 }
 
-nav a {
+.navLinks{
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+}
+
+
+.navLink{
   text-decoration: none;
   color: #333;
   font-size: 18px;  
   font-weight: 600;    
 }
 
-nav button {
+.navLink:hover {
+    border-bottom: 3px solid #ff5a5a;
+}
+
+ .navB {
   padding: 12px 24px; 
   font-size: 18px;   
   font-weight: 600;
@@ -39,16 +48,21 @@ nav button {
   border-radius: 6px;
 }
 
-nav a:hover {
-    border-bottom: 3px solid #ff5a5a;
-}
-
-nav button:hover {
+.navB:hover {
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
-#hero h1 {
+#hero {
+  min-height: 90vh;
+  display: flex;
+  margin: 0px 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-head{
   font-size: 60px;  
   font-weight: 800;
   color: #000;
@@ -56,32 +70,14 @@ nav button:hover {
   margin-bottom: 25px;
 }
 
-#hero {
-  min-height: 100vh;
-  padding: 80px 250px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
-  padding-bottom: 0px;
-}
-
-#hero-text h1 {
-  font-size: 16px;
-  color: #444;
-  max-width: 420px;
-  margin-bottom: 30px;
-}
-
-.hero-text p {
+.hero-p {
   font-size: 16px;
   color: #444;
   max-width: 430px;
   margin-bottom: 30px;
 }
 
-#hero button {
+.hero-button {
   padding: 15px 35px;
   border: 2px solid #000;
   background-color: transparent;
@@ -91,7 +87,7 @@ nav button:hover {
   border-radius: 8px;
 }
 
-#hero button:hover {
+.hero-button:hover {
   background-color: #000;
   color: #fff;
 }
@@ -107,117 +103,558 @@ nav button:hover {
 
 .circle {
   position: absolute;
-  width: 420px;
-  height: 420px;
+  width: 490px;
+  height: 470px;
   background-color: #00a88f;
   border-radius: 50%;
   z-index: 1;
 }
 
-.hero-image img {
+.hero-img {
   position: relative;
   z-index: 2;
-  width: 80vh;
+  width: 600px;
+  height: 710px;
 }
 
 
-#hero-section2 {
-  background-color: #2f3a37;
-  padding: 250px 220px;
+#card-section {
+  background-color: #2f3a37; 
+  padding: 90px;
+}
+
+.cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  max-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
+  margin: 0px 190px;
 }
 
-#hero-section2 > div {
+.card {
   border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 50px 35px;
   color: #ffffff;
+  padding: 20px;
   background-color: transparent;
 }
 
-#hero-section2 h2 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-#hero-section2 p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-#hero-section2 img {
+.card-img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 30px;
+} 
+
+.card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #english-skill {
-  min-height: 110vh;
-  padding: 80px 200px;
+  padding: 130px;
+}
+
+.skill-cards {
+  margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
-  padding-bottom: 0px;
+  gap: 20px;
 }
 
-#english-skill div {
-  max-width: 520px;
-  width: 100vh;
-  height: 55vh;
+.skill-text {
+  display: flex;
+  flex-flow: column;
+  max-width: 550px;
 }
 
-#english-skill h2 {
-  font-size: 42px;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  max-width: 520px;
-}
-
-#english-skill p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #444;
-  max-width: 480px;
-  margin-bottom: 20px;
-}
-
-#english-skill span {
-  display: block;
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-#english-skill button {
-  padding: 14px 36px;
-  background: transparent;
-  border: 2px solid #000;
-  font-size: 14px;
+.skill-text h2 {
+  font-size: 32px;
   font-weight: 700;
-  letter-spacing: 1px;
-  border-radius: 5px;
+  margin-bottom: 25px;
 }
 
-#english-skill button:hover {
+.skill-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: black;
+}
+
+.skill-text span {
+  font-size: 18px;
+  color: black;
+  padding: 20px 0px;
+}
+
+.skill-button {
+  padding: 15px 35px;
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.skill-button:hover {
   background-color: #000;
   color: #fff;
 }
 
-#english-skill img {
-  max-width: 520px;
-  width: 100vh;
-  height: 55vh;
+#why-us {
+  background-color: rgb(224, 34, 98); 
 }
 
+.why-us-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.why-us-card1 {
+  background-color: #00a88f;
+  padding: 40px;
+  color: white;
+  line-height: 30px;
+}
+
+.why-us-card2 {
+  color: white;
+  padding: 40px;
+  line-height: 30px;
+}
+
+.why-us-card1-bottom {
+  border-top: white solid 2px;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bottom-p {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-us-card-head{
+  font-size: 30px;
+  font-weight: 100px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.bottom-span {
+  font-size: 15px;
+}
+
+.why-us-list {
+  margin: 20px;
+}
+
+.why-us-button {
+  padding: 15px 35px;
+  margin-top: 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.why-us-button:hover {
+  background-color: white;
+  color: rgb(224, 34, 98);
+}
+
+#what-we-offer {
+  background-color: #333; 
+  padding: 10px 50px;
+}
+
+.what-we-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.what-we-offer-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+  margin: 10px 190px;
+  padding-bottom: 70px;
+}
+
+.what-we-offer-header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;  
+  font-weight: 800;
+}
+
+.what-we-offer-p {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.what-we-offer-text {
+  color: white;
+  line-height: 1.8;
+}
+
+#learnmore-getresult {
+  padding: 10px 50px;
+}
+
+.learnmore-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 70px;
+}
+
+.learnmore-card2 {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card2-section1-head {
+  font-size: 30px;
+  font-weight: 50px;
+  padding: 30px 0px;
+}
+
+.card2-section1-p {
+  line-height: 30px;
+}
+
+.card2-section1 {
+  margin: 40px 0px;
+}
+
+.card2-section1-button {
+  padding: 15px 35px;
+  margin: 30px 0px;
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.card2-section1-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.card2-section2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#what-our-learners-say {
+  background-color: rgb(10, 172, 172);
+  display: flex;
+  justify-content: center;
+}
+
+.our-learners-word {
+  width: 730px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
+  gap: 10px;
+}
+
+.our-learners-word h2{
+  font-size: 40px;
+  font-weight: 20px;
+  color: white;
+}
+
+.our-learners-word-text {
+  line-height: 25px;
+  color: white;
+}
+
+.our-learners-word-quote {
+  font-size: 70px;
+  font-weight: 70px;
+  color: white;
+}
+
+#our-courses {
+  padding: 70px 200px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 190px;
+   background-color: #ff5a5a;
+}
+
+.our-courses-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  gap: 20px;
+  color: white;
+}
+
+.our-courses-text {
+  line-height: 30px;
+}
+
+#language-courses {
+  padding: 70px 170px;
+}
+
+.language-course-head {
+  font-size: 25px;
+  font-weight: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.language-courses-card {
+  width: 520px;
+  border-bottom:#00a88f solid 2px;
+  padding: 50px 0px;
+}
+
+.language-courses-card-head {
+  width: 320px;
+  margin: 40px 0px;
+  line-height: 30px;
+  font-size: 19px;
+  font-weight: 100px;
+}
+
+.language-courses-card p {
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-weight: 300px;
+}
+
+.language-course-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#group-creative {
+  background-color: #444;
+}
+
+.empty {
+  background-color: #ff5a5a;  
+  width: 800px;
+  height: 550px;
+  border: #ff5a5a solid 1px;
+}
+
+.creative-img {
+  display: flex;
+  justify-content:flex-end;
+}
+
+.training-card-section {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  margin-left: 200px;
+  padding: 30px;
+}
+
+.creative-button {
+  padding: 15px 35px;
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.creative-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.training-card-head{
+  font-size: 25px;
+  font-weight: 200px;
+  padding: 30px 0px;
+  width: 390px;
+}
+
+.training-card-p {
+  line-height: 30px;
+}
+
+#empty {
+  display: flex;
+  justify-content: center;
+  padding-top: 390px;
+}
+
+#meet-the-team {
+  background-color: #333;
+}
+
+.the-team{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  padding: 120px 20px;
+  margin: 0px 90px;
+  line-height: 30px;
+}
+
+.team-card {
+  color: black;
+  padding: 50px 40px;
+  background-color: white;
+}
+
+.team-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+} 
+
+.team-mate {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#contact-us {
+  background-color: #2f3a37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+  border-bottom: #c2baba solid 1px;
+}
+
+.contact {
+  width: 1000px;
+  height: 600px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.call-head {
+  font-size: 25px;
+  font-weight: 400px;
+}
+
+.call-u {
+  font-size: 20px;
+  width: 200px;
+  color: #ff5a5a;
+}
+
+.call-p {
+  font-size: 20px;
+  width: 420px;
+}
+
+.call-head {
+  margin: 20px 0px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 90px;
+}
+
+.question-head {
+  font-size: 35px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+
+.question-p {
+  width: 420px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.question-input {
+  border: none;
+  border-bottom: #000 solid 2px;
+}
+
+.question-button {
+  padding: 15px 35px;
+  margin-top: 20px;
+  background-color: rgb(224, 34, 98);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.question-button:hover {
+  background-color: rgb(6, 179, 179);
+  color: white;
+}
+
+.question-form {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 40px;
+}
+
+#news-letter {
+  background-color: #2f3a37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+  border-bottom: #c2baba solid 1px;
+}
+
+.news-letter {
+  width: 1500px;
+  height: 1000px;
+}
