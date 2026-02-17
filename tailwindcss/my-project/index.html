@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Agrios Farming</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .hand-font {
+      font-family: 'Caveat', cursive;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <img src="assets/header/Header.png" alt="">
+
+      <div class="flex gap-3 items-center">
+        <img src="assets/header/Link - icon(1).png" alt="">
+        <img src="assets/header/Link - icon(2).png" alt="">
+        <img src="assets/header/Link - icon(3).png" alt="">
+        <img src="assets/header/Link - icon.png" alt="">
+      </div>
+      <div class="flex gap-3 items-center">
+        <img src="assets/header/Header(1).png" alt="">
+        <img src="assets/header/Header(2).png" alt="">
+        <img src="assets/header/Header(3).png" alt="">
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <nav class="flex gap-8 text-gray-600 font-semibold">
+        <a href="#" class="hover:text-green-600 flex items-center gap-2">Home <img class="w-2.5 max-h-2"
+            src="assets/header/Vector.png" alt=""></a>
+        <a href="#" class="hover:text-green-600">About</a>
+        <a href="#" class="hover:text-green-600 flex items-center gap-2">Services <img class="w-2.5 max-h-2"
+            src="assets/header/Vector.png" alt=""></a>
+        <a href="#" class="hover:text-green-600 flex items-center gap-2">Projects <img class="w-2.5 max-h-2"
+            src="assets/header/Vector.png" alt=""></a>
+        <a href="#" class="hover:text-green-600 flex items-center gap-2">News <img class="w-2.5 max-h-2"
+            src="assets/header/Vector.png" alt=""></a>
+        <a href="#" class="hover:text-green-600 flex items-center gap-2">shop <img class="w-2.5 max-h-2"
+            src="assets/header/Vector.png" alt=""></a>
+        <a href="#" class="hover:text-green-600">Contact</a>
+      </nav>
+      <div>
+        <img src="assets/header/Link - search.png" alt="">
+        <img src="assets/header/Link - cart.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[80vh] flex items-center">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="assets/hero/div.elementor-repeater-item-5887cc6.png" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative max-w-7xl mx-auto px-6 text-white">
+      <p class="uppercase text-sm tracking-widest mb-4">
+        Welcome to Agrios Farming
+      </p>
+
+      <h2 class="text-5xl md:text-7xl hand-font leading-tight">
+        Agriculture <br /> Eco Farming
+      </h2>
+
+      <p class="max-w-xl mt-6 text-gray-200">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ut tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
+      </p>
+
+      <button class="mt-8 bg-green-600 px-8 py-3 rounded-lg text-white font-semibold hover:bg-green-700 transition">
+        Discover More
+      </button>
+    </div>
+  </section>
+
+  <!-- Feature Cards -->
+  <section class="relative -mt-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <p class="text-yellow-500 font-semibold mb-2">Feature 01</p>
+        <h3 class="text-lg font-semibold mb-4">
+          We're using a new technology
+        </h3>
+        <img src="assets/hero/container.png" class="mx-auto rounded-lg" />
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <p class="text-yellow-500 font-semibold mb-2">Feature 02</p>
+        <h3 class="text-lg font-semibold mb-4">
+          Good in smart organic services
+        </h3>
+        <img src="assets/hero/container(1).png" class="mx-auto rounded-lg" />
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <p class="text-yellow-500 font-semibold mb-2">Feature 03</p>
+        <h3 class="text-lg font-semibold mb-4">
+          Reforming in the systems
+        </h3>
+        <img src="assets/hero/container(2).png" class="mx-auto rounded-lg" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Left Image Layout -->
+      <div class="relative flex justify-center">
+
+        <!-- Big Circle Image -->
+        <div class="w-105 h-105 rounded-full overflow-hidden shadow-xl">
+          <img src="assets/about/div.image-wrap.png" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Small Overlapping Circle -->
+        <div class="absolute -bottom-8 -left-6 w-45 h-45 rounded-full overflow-hidden border-8 border-white shadow-lg">
+          <img src="assets/about/image-02.webp.png" class="w-full h-full object-cover" />
+        </div>
+
+      </div>
+
+      <!-- Right Content -->
+      <div>
+        <p class="text-yellow-500 font-semibold mb-3">
+          Our Introductions
+        </p>
+
+        <h2 class="text-4xl font-bold text-gray-800 leading-tight mb-4">
+          Agriculture & Organic <br /> Product Farm
+        </h2>
+
+        <p class="text-green-600 font-semibold mb-4">
+          Agrios is the largest global organic farm.
+        </p>
+
+        <p class="text-gray-600 mb-6">
+          There are many variations of passages of lorem ipsum available
+          but the majority have suffered alteration in some form by injected
+          humour or random words which don’t look even.
+        </p>
+
+        <!-- Features Row -->
+        <div class="grid grid-cols-2 gap-6 mb-6">
+          <div class="flex items-start gap-3">
+            <div>
+              <img src="assets/about/Icon(1).svg" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Growing fruits vegetables</h4>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div>
+              <img src="assets/about/Icon.svg" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Tips for ripening your fruits</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bullet Points -->
+        <ul class="space-y-2 mb-8 text-gray-600">
+          <li>✔ Lorem Ipsum is not simply random text.</li>
+          <li>✔ Making this the first true generator on the internet.</li>
+        </ul>
+
+        <button class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+          Discover More
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- What We Offer Section -->
+  <section class="py-24 bg-[#f3f1ea]">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <p class="text-yellow-500 font-semibold mb-3">Our Services</p>
+      <h2 class="text-4xl font-bold text-gray-800 mb-16">
+        What We Offer
+      </h2>
+
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <!-- Card 1 -->
+        <div class="relative">
+          <img src="assets/what-we-offer/images.png" />
+          <button
+            class="absolute bottom-28 left-1/2 bg-green-600 px-4 py-2 rounded-xl shadow-md text-center text-white">
+            Read More
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative">
+          <img src="assets/what-we-offer/images(1).png" />
+          <button
+            class="absolute bottom-28 left-1/2 bg-green-600 px-4 py-2 rounded-xl shadow-md text-center text-white">
+            Read More
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative">
+          <img src="assets/what-we-offer/re.png" />
+          <button
+            class="absolute bottom-28 left-1/2 bg-green-600 px-4 py-2 rounded-xl shadow-md text-center text-white">
+            Read More
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="relative">
+          <img src="assets/what-we-offer/box.png" />
+          <button
+            class="absolute bottom-28 left-1/2 bg-green-600 px-4 py-2 rounded-xl shadow-md text-center text-white">
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <!-- Green Stats Bar -->
+      <div class="max-w-6xl mx-auto px-6 mt-18">
+        <div
+          class="bg-green-600 text-white rounded-xl py-10 px-8 grid grid-cols-2 md:grid-cols-4 text-center shadow-xl relative z-10">
+
+          <p class="mt-2 text-sm">Agriculture Products</p>
+
+          <p class="mt-2 text-sm">Projects Completed</p>
+
+          <p class="mt-2 text-sm">Satisfied Clients</p>
+
+          <p class="mt-2 text-sm">Expert Farmers</p>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Background Image Section -->
+    <div class="relative -mt-16">
+      <img src="assets/what-we-offer/sections.png" class="w-full h-full object-cover" />
+    </div>
+  </section>
+
+  <!--recently completed-->
+  <section>
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <p class="text-yellow-500  hand-font">recently completed</p>
+      <h2 class="text-4xl font-bold text-gray-800 mb-16">
+        Explore Projects
+      </h2>
+
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <!-- Card 1 -->
+        <div class="relative">
+          <img src="assets/explore-project/elements.png" />
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative">
+          <img src="assets/explore-project/elements(1).png" />
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative">
+          <img src="assets/explore-project/elements(2).png" />
+        </div>
+
+        <!-- Card 4 -->
+        <div class="relative">
+          <img src="assets/explore-project/elements(3).png" />
+        </div>
+      </div>
+  </section>
+
+  <!-- Testimonials section -->
+  <section class="py-24 bg-gray-200 mt-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2">
+
+      <!-- Left Content -->
+      <div class="w-73">
+        <h2 class="text-4xl hand-font text-yellow-500 mb-6 mt-2">Our Testimonials</h2>
+        <h3 class="text-2xl font-semibold text-black-800 leading-7.5">What They're Talking About Agrios</h3>
+        <p class="leading-6.5 mt-6 mb-6">There are many variations of passages of available but the majortity have
+          sufferred
+          alteration in some form by injected humor or random word which don't look even.</p>
+
+        <button class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition mt-4">
+          View All Testimonials
+        </button>
+      </div>
+
+      <!-- Right Content -->
+      <div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center flex items-center gap-6">
+          <div class="text-left">
+            <p>There are many variations of passages of available but the majority have suffered alteration in some form
+              by injected humor or random word which don't look even.</p>
+            <div class="flex items-center justify-between mt-6">
+              <h3 class="text-lg font-semibold mb-4">
+                Bonnie Tolbert
+              </h3>
+              <div class="flex gap-1 items-center justify-center">
+                <img src="assets/testimonials/Icon.png" alt="">
+                <img src="assets/testimonials/Icon.png" alt="">
+                <img src="assets/testimonials/Icon.png" alt="">
+                <img src="assets/testimonials/Icon.png" alt="">
+                <img src="assets/testimonials/Icon.png" alt="">
+              </div>
+            </div>
+          </div>
+          <img src="assets/testimonials/div.avatar-wrap.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+
+      <!-- Left Image Layout -->
+      <div>
+        <img src="assets/farm-benefit/elements.png" alt="">
+      </div>
+
+      <!-- Right Content -->
+      <div class="w-120">
+        <p class="text-yellow-500 hand-font mb-3">
+          Our Introductions
+        </p>
+
+        <h2 class="text-4xl font-bold text-gray-800 leading-tight mb-4">
+          Why Choose Agrios Market
+        </h2>
+
+        <p class="text-gray-700 mb-4">
+          There are many variations of passages of available but the majortity have sufferred alteration in some form by
+          injected humor or random word which don't look even.
+        </p>
+
+        <!-- Features Row -->
+        <div class="grid grid-cols-1 gap-6 mb-6">
+          <div class="flex items-start gap-3">
+            <div>
+              <img src="assets/farm-benefit/Icon.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Growing fruits vegetables</h4>
+              <p>
+                There are variation You need to be sure there is anything hidden in the middle of text.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div>
+              <img src="assets/farm-benefit/Icon.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Growing fruits vegetables</h4>
+              <p>
+                There are variation You need to be sure there is anything hidden in the middle of text.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div>
+              <img src="assets/farm-benefit/Icon.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Growing fruits vegetables</h4>
+              <p>
+                There are variation You need to be sure there is anything hidden in the middle of text.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition mt-4">
+          Discover More
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- From the Blog -->
+  <section>
+    <div class="max-w-7xl mx-auto px-6 text-center mt-7">
+
+      <p class="text-yellow-500  hand-font">From the Blog</p>
+      <h2 class="text-4xl font-bold text-gray-800 mb-16">
+        News & Articles
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-2">
+
+        <!-- Card 1 -->
+        <div class="relative">
+          <img src="assets/blogs/div.master-news.png" />
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative">
+          <img src="assets/blogs/div.master-news(1).png" />
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative">
+          <img src="assets/blogs/div.master-news(2).png" />
+        </div>
+
+      </div>
+  </section>
+
+  <!-- contact section -->
+  <section class="bg-gray-900 mt-10 py-50">
+    <div class="flex max-w-7xl mx-auto px-6 gap-8 pt-7">
+      <div class="w-75">
+        <img src="assets/contact/Link - logo → logo@2x-white-1.webp.png" alt="">
+        <p class="text-white mt-5 mb-5">There are many variations of passages of lorem ipsum available, but the majority suffered.</p>
+        <div class="flex gap-5">
+          <img src="assets/contact/Link - icon.png" alt="">
+          <img src="assets/contact/Link - icon(1).png" alt="">
+          <img src="assets/contact/Link - icon(2).png" alt="">
+          <img src="assets/contact/Link - icon(3).png" alt="">
+        </div>
+      </div>
+      <div class="text-white w-60">
+        <h2 class="font-bold mb-5">Explore</h2>
+        <div>
+          <a class="flex gap-4" href="#"><img class="w-4 h-4" src="assets/contact/Icon.png" alt="">About</a>
+          <a class="flex gap-4" href="#"><img class="w-4 h-4" src="assets/contact/Icon.png" alt="">Services</a>
+          <a class="flex gap-4" href="#"><img class="w-4 h-4" src="assets/contact/Icon.png" alt="">Our Projects</a>
+          <a class="flex gap-4" href="#"><img class="w-4 h-4" src="assets/contact/Icon.png" alt="">Meet the Farmers</a>
+          <a class="flex gap-4" href="#"><img class="w-4 h-4" src="assets/contact/Icon.png" alt="">Latest News</a>
+          <a class="flex gap-4" href="#"><img class="w-4 h-4" src="assets/contact/Icon.png" alt="">Contact</a>
+        </div>
+      </div>
+      <div class="text-white w-55">
+        <h2 class="font-bold mb-5">News</h2>
+        <div class="mb-5">
+          <h3 class="">Bringing Food Production Back To Cities</h3>
+          <p class="text-yellow-400">July 5, 2022</p>
+        </div>
+        <div>
+          <h3>The Future of Farming, Smart Irrigation Solutions</h3>
+          <p class="text-yellow-400">July 5, 2022</p>
+        </div>
+      </div>
+      <div class="text-white">
+        <h2 class="font-bold mb-5">Contact</h2>
+        <div>
+          <h3>666 888 0000</h3>
+          <h3>needhelp@company.com</h3>
+          <h3>80 broklyn golden street line New York, USA</h3>
+        </div>
+        <div class="flex">
+          <div class="bg-white text-black align-middle">
+            <input type="text" placeholder="Your Email Address">
+          </div>
+          <div class="bg-yellow-500 p-4"><img src="assets/contact/telegram.png" alt=""></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-gray-950">
+    <div class="text-white flex justify-between max-w-7xl mx-auto py-5">
+      <p>© All Copyright 2024 by shawonetc Themes</p>
+      <p>shawonetc Themes Privacy Policy</p>
+    </div>
+  </section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
