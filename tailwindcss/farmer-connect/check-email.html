@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>farmer-connect</title>
+</head>
+
+<body>
+    <div class="bg-white flex flex-col p-5 justify-center  ">
+        <div class="mt-4">
+            <a href="login.html">
+                <img class="mb-7" src="asset/forgot-pass/Group 5.png" alt="">
+            </a>
+            <h1 class="font-extrabold mb-3">Check Your Email</h1>
+            <p class="text-gray-500 font-light">We sent a reset link to contact@gmailcom enter 5 digit code that
+                mentioned in the email</p>
+        </div>
+        <form class="flex flex-col" action="update">
+            <div class="flex flex-col gap-4 mt-6">
+                <div class="flex justify-between">
+                    <input class="border border-gray-300 px-4 w-14 py-2 rounded" type="text" placeholder="8" required>
+                    <input class="border border-gray-300 px-4 py-2 w-14 rounded" type="text" placeholder="6" required>
+                    <input class="border border-gray-300 px-4 py-2 w-14 rounded" type="text" placeholder="3" required>
+                    <input class="border border-gray-300 px-4 py-2 w-14 rounded" type="text" required>
+                    <input class="border border-gray-300 px-4 py-2 w-14 rounded" type="text" required>
+                </div>
+                <button class="bg-green-700 text-white px-4 py-2 rounded">Verify Code</button>
+            <span class="text-gray-500 mt-4">Haven't got the email yet? <a href="" class="text-blue-500">S</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
