@@ -1,0 +1,335 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* height: 100%; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-image{
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+    background: url('asset/hero/WhatsApp\ Image\ 2026-02-05\ at\ 17.45.52.jpeg');
+    background-size: cover;
+    filter: brightness(0.2);
+    z-index: 0;
+}
+
+.navbar {
+  display: flex;                  
+  justify-content: space-around;
+  align-items: center;           
+  padding: 20px 50px;
+  position: fixed;    
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+.nav-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 1;
+  gap: 20px;
+  list-style: none;
+  
+}
+
+.nav-link span{
+    color: #BC9A6C;
+}
+
+.logo span{
+    color: #BC9A6C;
+}
+
+.nav-icons {
+  display: flex; 
+  gap: 15px;
+  cursor: pointer;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    gap: 370px;
+    color: white;
+}
+
+.world h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.world p{
+  margin-top: 20px;
+}
+
+.button-sec button{
+  width: 190px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+.button-sec button:nth-child(1){
+  background-color: #BC9A6C;
+  outline: none;
+  font-weight: bold;
+  color: white;
+}
+
+.button-sec button:nth-child(2){
+  border: 1px solid #BC9A6C;
+  background: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-image img{
+  position: relative;
+    width: 536px;
+    height: 596px;
+    z-index: 2;
+}
+
+.hut{
+  width: 226px;
+  height: 34px;
+  border: 1px solid #BC9A6C;
+}
+
+.hut h6{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.midle-image img{
+  display: flex;
+  justify-content: center;
+  width: 59px;
+  height: 74px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  rotate: 140deg;
+}
+
+.midle-images img{
+  display: flex;
+  justify-content: center;
+  width: 59px;
+  height: 74px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+   filter: brightness(0.4);
+  rotate: 140deg;
+}
+
+.midle-imagess img{
+  display: flex;
+  justify-content: center;
+  width: 59px;
+  height: 74px;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+   filter: brightness(0.4);
+  rotate: 140deg;
+}
+
+
+.midle-imagesss img{
+  display: flex;
+  justify-content: center;
+  width: 59px;
+  height: 74px;
+  position: absolute;
+  top: 32%;
+  left: 43%;
+   filter: brightness(0.4);
+  rotate: 140deg;
+}
+
+.border{
+  width: 539px;
+  height: 588px;
+  border: 1px solid #BC9A6C;
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  z-index: 1;
+}
+
+.coffe img{
+  width: 573px;
+  height: 642px;
+  position: relative;
+  left: 50px;
+}
+
+.cofee img{
+  width: 475px;
+  height: 357px;
+  position: absolute;
+  top: 150%;
+  margin-right: 10px;
+}
+
+.check{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chec {
+  width: 34px;
+  height: 30px;
+  background-color: gray;
+  margin-top: 10px;
+  /* align-items: center; */
+}
+
+.chec i{
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.more button{
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  background-color: #BC9A6C;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 30px;
+}
+
+.coffe-container{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 80px;
+}
+
+.about-section{
+  margin-top: 50px;
+}
+
+.about-section h2{
+  margin-top: 30px;
+}
+
+.about-section p{
+  margin-top: 30px;
+}
+
+.about-section div:nth-child(1){
+  margin-top: 30px;
+}
+
+.category-section{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.cat{
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.cat-icon{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #BC9A6C;
+  border-radius: 50px;
+}
+.cat-icon i{
+  font-size: 30px;
+  color: #BC9A6C;
+  margin-top: 7px;
+  margin-left: 8px;
+}
+
+.cat-imagess{
+  width: 344px;
+  height: 513px;
+}
+
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.quality-section img{
+  width: 587px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.lorem{
+  width: 523px;
+  height: 166px;
+  border: 2px solid #BC9A6C;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 325%;
+  left: 310px;
+}
+
+.corn-image{
+  display: flex;
+  margin-top: 20px;
+}
+
+.cornss i{
+  width: 47px;
+  height: 73px;
+  margin-top: 55px;
+  margin-left: 40px;
+}
+
+.cornss{
+  width: 80px;
+  height: 92px;
+  background-color: #BC9A6C;
+}
+
+.cap p{
+  margin-top: 10px;
+}
+
+.cap h4{
+  margin-top: 10px;
+}
+
+.cap{
+  margin-left: 10px;
+}
+
+.all-con{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+

@@ -4,6 +4,267 @@
     box-sizing: border-box;
 }
 
+/* Basic Responsive Media Queries */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+    
+    .nav-search {
+        display: none;
+    }
+    
+    .nav-notification {
+        gap: 10px;
+    }
+    
+    .nav-notification button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .aside-outer {
+        display: none;
+    }
+    
+    .body {
+        flex-direction: column;
+    }
+    
+    .main-body header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .main-header-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .main-header-links a {
+        font-size: 12px;
+    }
+    
+    .main-head-cards {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .main-head-card {
+        gap: 20px;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    
+    .main-body-cards {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+    
+    .space-task-1,
+    .space-task1-img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .single-card {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footer-socials,
+    .footer-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .aside-outer {
+        width: 350px;
+    }
+    
+    .main-head-cards {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .main-body-cards {
+        justify-content: center;
+    }
+    
+    .space-task-1,
+    .space-task1-img {
+        width: 220px;
+    }
+    
+    .single-card {
+        width: 350px;
+        left: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 16px;
+    }
+    
+    .nav-notification {
+        gap: 5px;
+    }
+    
+    .nav-notification button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .mh, .x {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .mh h2 {
+        font-size: 8px;
+    }
+    
+    .main-header-links {
+        gap: 5px;
+    }
+    
+    .main-header-links a {
+        font-size: 10px;
+    }
+    
+    .space-task-profile h5 {
+        font-size: 8px;
+    }
+    
+    .space-task-1 h3 {
+        font-size: 8px;
+        padding: 15px 8px;
+    }
+    
+    .new-task {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .header-nav {
+        padding: 15px 25px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-links a {
+        font-size: 18px;
+    }
+    
+    .aside-outer {
+        width: 350px;
+    }
+    
+    .main-body header {
+        gap: 100px;
+    }
+    
+    .main-head-cards {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .main-body-cards {
+        justify-content: center;
+    }
+    
+    .space-task-1,
+    .space-task1-img {
+        width: 220px;
+    }
+    
+    .single-card {
+        width: 350px;
+        left: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 18px;
+    }
+    
+    .nav-notification {
+        gap: 5px;
+    }
+    
+    .nav-notification button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .mh, .x {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .mh h2 {
+        font-size: 8px;
+    }
+    
+    .main-header-links {
+        gap: 10px;
+    }
+    
+    .main-header-links a {
+        font-size: 12px;
+    }
+    
+    .space-task-profile h5 {
+        font-size: 8px;
+    }
+    
+    .space-task-1 h3 {
+        font-size: 8px;
+        padding: 15px 8px;
+    }
+    
+    .new-task {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
 .body {
     display: flex;
 }
@@ -12,6 +273,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px 30px;
     font-family: 'Courier New', Courier, monospace;
     border: 1px solid rgb(160, 160, 160);
@@ -35,6 +297,7 @@
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -65,12 +328,12 @@
     padding: 3px 10px;
 }
 
-.nav-search div span{
+.nav-search div span {
     padding: 3px 3px;
     color: rgb(131, 131, 131);
 }
 
-.nav-search i{
+.nav-search i {
     color: rgb(53, 51, 51);
 }
 
@@ -80,7 +343,7 @@
     align-items: center;
 }
 
-.nav-notification button{
+.nav-notification button {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -119,10 +382,12 @@
     align-items: center;
 }
 
-.aside-outer{
+.aside-outer {
     border: 1px solid rgb(160, 160, 160);
     width: 450px;
+    max-width: 30vw;
     display: flex;
+    flex-shrink: 0;
 }
 
 .aside-inner {
@@ -217,11 +482,11 @@
     padding: 10px 20px;
 }
 
-.info h2{
+.info h2 {
     font-size: 15px;
 }
 
-.info h3{
+.info h3 {
     font-size: 8px;
 }
 
@@ -246,7 +511,7 @@
     color: rgb(114, 114, 114);
 }
 
-.nav-main div a{
+.nav-main div a {
     text-decoration: none;
     color: rgb(114, 114, 114);
     font-weight: 700;
@@ -277,7 +542,7 @@
     align-items: center;
     padding: 10px 3px;
     border-radius: 5px;
-    
+
 }
 
 .nav-main h2 {
@@ -287,6 +552,8 @@
 .main-body {
     border: 1px solid rgb(165, 164, 164);
     padding: 10px;
+    flex: 1;
+    min-width: 0;
 }
 
 .main-body header {
@@ -294,6 +561,7 @@
     gap: 215px;
     /* justify-content: space-between; */
     align-items: center;
+    flex-wrap: wrap;
     border: 1px solid rgb(138, 138, 138);
     padding: 5px 7px;
     border-top-left-radius: 5px;
@@ -333,12 +601,12 @@
     padding: 3px 10px;
 }
 
-.main-header-search div span{
+.main-header-search div span {
     padding: 3px 3px;
     color: rgb(131, 131, 131);
 }
 
-.main-header-search i{
+.main-header-search i {
     color: rgb(53, 51, 51);
 }
 
@@ -374,17 +642,17 @@
     align-items: center;
 }
 
-.numbers span{
+.numbers span {
     color: rgb(107, 107, 107);
 }
 
-.main-head-card1{
+.main-head-card1 {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.main-head-card1 h3{
+.main-head-card1 h3 {
     color: rgb(112, 111, 111);
 }
 
@@ -398,7 +666,7 @@
 
 }
 
-.main-head-card i{
+.main-head-card i {
     color: rgb(182, 182, 182);
 }
 
@@ -412,8 +680,10 @@
 .space-task-1 {
     border: 1px solid rgb(177, 177, 177);
     width: 254px;
+    max-width: 100%;
     margin-left: 10px;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
 .space-task-profile {
@@ -422,7 +692,7 @@
     align-items: center;
 }
 
-.space-task-1 h3{
+.space-task-1 h3 {
     font-size: 10px;
     padding: 20px 10px;
 }
@@ -444,17 +714,18 @@
 .space-task1-img {
     border: 1px solid rgb(145, 145, 145);
     width: 254px;
-    /* padding: 10px; */
+    max-width: 100%;
     margin-left: 10px;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
-.space-task1-img h3{
+.space-task1-img h3 {
     font-size: 12px;
     padding-left: 10px;
 }
 
-.space-task-profile h5{
+.space-task-profile h5 {
     font-size: 10px;
     margin: 20px 0px;
 
@@ -464,12 +735,13 @@
     padding: 10px;
 }
 
-.space-task1-card h3{
+.space-task1-card h3 {
     font-size: 10px;
 }
 
 .main-body-cards {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 60px;
     gap: 20px;
 }
@@ -522,13 +794,14 @@ footer {
     gap: 5px;
 }
 
-.footer-button button{
+.footer-button button {
     padding: 10px;
 }
 
 .single-card {
     border: 1px solid rgb(139, 139, 139);
     width: 400px;
+    max-width: 90%;
     height: 300px;
     padding: 15px;
     position: absolute;
@@ -551,7 +824,7 @@ footer {
     gap: 20px;
 }
 
-.head1 h1{
+.head1 h1 {
     font-size: 15px;
 }
 
@@ -576,7 +849,7 @@ footer {
     justify-content: center;
 }
 
-.footer-c3{
+.footer-c3 {
     display: flex;
     align-items: center;
 }
