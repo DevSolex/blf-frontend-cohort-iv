@@ -1,0 +1,1293 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="">
+        <nav class="border-b-gray-300 border-b flex items-center justify-between py-4 px-30">
+            <div class="flex items-center gap-7">
+                <img src="/assets/logo.png" alt="logo image" class="size-12 rounded">
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="size-6 text-green-600">
+                        <path fill-rule="evenodd"
+                            d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <h2 class="flex items-center">Lagos
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </h2>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2 bg-gray-100 p-2 pr-17 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="size-5 text-green-800">
+                        <path fill-rule="evenodd"
+                            d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <input type="text" placeholder="Search Chowdeck......"
+                        class="border-none outline-none bg-transparent">
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="bg-green-900 rounded-full p-2 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </div>
+                    <div class="bg-green-900 rounded-full p-2 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="container mx-auto px-30">
+            <div class="flex items-center justify-between pt-10">
+                <h2 class="font-bold">Explore Categories</h2>
+                <div class="bg-green-900 rounded-3xl p-2 text-white flex items-center gap-2 w-max">
+                    <h2>Filter</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 flex-wrap py-7">
+                <div class="bg-fuchsia-200 p-5 flex flex-col items-center rounded-md size-35 gap-1">
+                    <img src="/assets/ex1.webp" alt="" class="size-15">
+                    <h2 class="font-light">Resturants</h2>
+                </div>
+                <div class="bg-fuchsia-200 p-5 flex flex-col items-center rounded-md size-35 gap-1">
+                    <img src="/assets/ex2.webp" alt="" class="size-15">
+                    <h2 class="font-light">Shop</h2>
+                </div>
+                <div class="bg-emerald-100 p-5 flex flex-col items-center rounded-md size-35 gap-1">
+                    <img src="/assets/imgi_4_pharmacy.svg" alt="" class="size-15">
+                    <h2 class="font-light">Pharmacy</h2>
+                </div>
+                <div class="bg-emerald-100 p-5 flex flex-col items-center rounded-md size-35 gap-1">
+                    <img src="/assets/ex4.webp" alt="" class="size-15">
+                    <h2 class="font-light">Local Markets</h2>
+                </div>
+                <div class="bg-fuchsia-200 p-5 flex flex-col items-center rounded-md size-35 gap-1">
+                    <img src="/assets/ex5.webp" alt="" class="size-15">
+                    <h2 class="font-light">African Meals</h2>
+                </div>
+                <div class="bg-emerald-100 p-5 flex flex-col items-center rounded-md size-35 gap-1">
+                    <img src="/assets/ex6.svg" alt="" class="size-15">
+                    <h2 class="font-light">Healthy</h2>
+                </div>
+                <div class="bg-fuchsia-200 p-5 flex flex-col items-center rounded-md size-35 gap-1">
+                    <img src="/assets/ex7.webp" alt="" class="size-15">
+                    <h2 class="font-light">Drinks</h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 mt-9">
+                <div
+                    class="bg-[url('/assets/valentine-bg.svg')] bg-cover bg-center h-50 rounded-2xl my-4 flex items-center justify-between">
+                    <div class="flex flex-col items-start gap-2 p-5">
+                        <h2 class="text-3xl font-bold text-white">Valentine's Day Special</h2>
+                        <p class="text-sm text-white">Get 20% off on all orders this Valentine's Day!</p>
+                        <button class="bg-white text-black px-4 py-2 rounded-md ">Order Now</button>
+                    </div>
+                    <div class="">
+                        <img src="/assets/snacks.png" alt="" class="size-50 rounded-2xl">
+                    </div>
+                </div>
+                <div
+                    class="bg-[url('/assets/relay-line-card.svg')] bg-cover bg-center h-50 rounded-2xl my-4 flex items-center justify-between">
+                    <div class="p-5 flex items-center gap-2 w-70">
+                        <img src="/assets/relay.png" alt="" class="w-30">
+                        <h2 class="text-white font-bold">Send Packages Easy with Relay</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="my-15">
+                <div class="flex items-center gap-2 my-15">
+                    <h2 class="text-2xl font-bold">Handpicked </h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="size-6 text-green-600">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+                <!-- Cards Wrapper -->
+                <div class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
+
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-15">
+                <div class="flex items-center gap-2 my-15">
+                    <h2 class="text-2xl font-bold">All Resturants </h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="size-6 text-green-600">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6">
+
+
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-90 bg-white rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="relative h-44 rounded-t-2xl overflow-hidden">
+                            <img src="/assets/rice-bg.jpg" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/70"></div>
+                            <div
+                                class="absolute top-3 left-3 bg-yellow-400 text-xs font-medium p-2 rounded-full shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </div>
+
+                            <div class="absolute top-22 left-9 text-white text-15px font-light">
+                                OPEN TODAY AT 90:00 AM
+                            </div>
+
+                            <div
+                                class="absolute top-32 right-3 bg-white p-2 rounded-md shadow cursor-pointer flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                                </svg>
+                                Up to 30% off
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-semibold text-gray-800">
+                                    Mega Chicken - Ikeja
+                                </h3>
+                                <span class="text-sm text-yellow-500 font-medium flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    4.35
+                                </span>
+                            </div>
+
+                            <p class="text-sm text-gray-500 mb-2 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6 text-green-600">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                28-38 mins
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 text-xs text-green-600 font-medium">
+                                <span>African</span>
+                                <span>•</span>
+                                <span>Fast Food</span>
+                                <span>•</span>
+                                <span>ChowSmart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center my-6">
+                <button class="bg-transparent text-green-700 border-green-700 border p-3 rounded-md">View More</button>
+            </div>
+        </main>
+        <footer class="px-34 py-6 ">
+            <div class="container mx-auto py-6 flex flex-wrap justify-between p-7">
+                <div class="text-green-800 flex items-start">
+                    <img src="/assets/chow-svg.svg" alt="" class="size-60"/>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl font-bold">Locations</h2>
+                    <a href="#">Community 25</a>
+                    <a href="#">NYSC Camp iseyin</a>
+                    <a href="#">Enugu NYSC Camp</a>
+                    <a href="#">Benin NYSC Camp</a>
+                    <a href="#">Potharcort NYSC Camp</a>
+                    <a href="#">Jos NYSC Camp</a>
+                    <button>See more</button>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl font-bold">DOWNLOAD</h2>
+                    <a href="#">Google Play Store</a>
+                    <a href="#">iOS App Store</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl font-bold">GET HELP</h2>
+                    <a href="#">Email</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl font-bold">LEGAL</h2>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-center text-sm text-gray-500">© 2024 ChowDeck.</p>
+                <div class="">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
