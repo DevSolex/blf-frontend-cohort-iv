@@ -5,22 +5,22 @@
 }
 
 body {
-    width: 350px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login {
     background-color: #eee8f0;
-    height: 400;
-    width: 300;
-    margin-left: 200;
     border-radius: 6px;
-    padding: 25px;
+    padding: 30px;
+    margin: 30px;
 }
 
 h1 {
-    margin-left: 35px;
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(30, 3, 61);
     font-size: large;
@@ -43,7 +43,6 @@ input {
   border: gray;
   box-sizing: border-box;
   border-radius: 10px;
-  outline: none;
 }
 
 #login {
