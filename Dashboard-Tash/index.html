@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,196 +8,302 @@
   <title>HMS Dashboard</title>
 </head>
 
-<body class="bg-[#0f0f0f] text-gray-200 font-sans">
+<body class="bg-[#0f0f0f] text-gray-200 font-sans h-screen">
 
-<div class="flex h-screen">
 
-  <!-- Sidebar -->
-  <aside class="w-64 bg-[#1a1a1a] p-6 space-y-6">
+  <nav class="flex justify-between items-center mb-8 bg-[#252525] px-12 pt-8">
     <div class="flex items-center gap-2 text-xl font-semibold">
       <div class="w-3 h-3 bg-cyan-400 rounded-full"></div>
       HMS
     </div>
-
-    <nav class="space-y-4 mt-10">
-      <a class="flex items-center gap-3 bg-[#252525] p-3 rounded-lg">
-        <span>📊</span> Analytics
-      </a>
-      <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg">🎓 Students</a>
-      <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg">⚠️ Complaints</a>
-      <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg">📦 Stock</a>
-      <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg">👤 Users</a>
-      <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg">🍽 Meals</a>
-    </nav>
-  </aside>
-
-  <!-- Main Content -->
-  <main class="flex-1 p-8 overflow-y-auto">
-
-    <!-- Top Nav -->
-    <div class="flex justify-between items-center mb-8">
-      <div class="flex gap-10">
-        <div class="bg-black px-6 py-3 rounded-t-2xl border-t-2 border-cyan-400">
-          Dashboard
-        </div>
-        <div class="text-gray-400">Rooms</div>
-        <div class="text-gray-400">Attendance</div>
-        <div class="text-gray-400">Accounts</div>
-        <div class="text-gray-400">Maintenance</div>
+    <div class="flex gap-10 items-center">
+      <div class="flex gap-3 bg-black px-9 py-5 rounded-t-2xl border-t-2 border-cyan-400">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z"
+            clip-rule="evenodd" />
+        </svg>
+        Dashboard
       </div>
-
-      <div class="flex gap-4 items-center">
-        <div class="w-10 h-10 bg-[#1f1f1f] rounded-full"></div>
-        <div class="w-10 h-10 bg-[#1f1f1f] rounded-full"></div>
-        <div class="w-10 h-10 bg-cyan-400 rounded-full"></div>
+      <div class="flex gap-2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+        </svg>
+        Rooms</div>
+      <div class="flex gap-2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+        </svg>
+        Attendance</div>
+      <div class="flex gap-2 **:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
+        </svg>
+        Accounts</div>
+      <div class="flex gap-2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+        </svg>
+        Maintenance</div>
+    </div>
+    <div class="flex gap-4 items-center">
+      <div class="w-10 h-10 bg-[#1f1f1f] rounded-full flex justify-center items-center"><svg
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="w-10 h-10 bg-[#1f1f1f] rounded-full flex justify-center items-center"><svg
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-yellow-400">
+          <path fill-rule="evenodd"
+            d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="w-10 h-10 bg-[#1f1f1f] rounded-full flex justify-center items-center"><svg
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-cyan-400">
+          <path fill-rule="evenodd"
+            d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+            clip-rule="evenodd" />
+        </svg>
       </div>
     </div>
+  </nav>
 
-    <div class="grid grid-cols-3 gap-6">
+  <div class="flex h-screen">
 
-      <!-- Left Content -->
-      <div class="col-span-2 space-y-6">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#1a1a1a] p-6 space-y-6 ml-5 mb-5 rounded-2xl">
 
-        <!-- Occupancy -->
-        <div class="bg-[#1a1a1a] p-6 rounded-xl">
-          <h2 class="mb-6 text-lg font-semibold">Occupancy</h2>
 
-          <div class="grid grid-cols-3 gap-6">
+      <nav class="space-y-4 mt-10">
+        <a class="flex items-center gap-3 bg-[#252525] p-3 rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path
+              d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75ZM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 0 1-1.875-1.875V8.625ZM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 0 1 3 19.875v-6.75Z" />
+          </svg>
+          Analytics
+        </a>
+        <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path
+              d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
+            <path
+              d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
+            <path
+              d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
+          </svg>
+          Students</a>
+        <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm-4.34 7.964a.75.75 0 0 1-1.061-1.06 5.236 5.236 0 0 1 3.73-1.538 5.236 5.236 0 0 1 3.695 1.538.75.75 0 1 1-1.061 1.06 3.736 3.736 0 0 0-2.639-1.098 3.736 3.736 0 0 0-2.664 1.098Z"
+              clip-rule="evenodd" />
+          </svg>
+          Complaints</a>
+        <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd"
+              d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
+              clip-rule="evenodd" />
+          </svg>
+          Stock</a>
+        <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path
+              d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z" />
+          </svg>
+          Users</a>
+        <a class="flex gap-3 p-3 hover:bg-[#252525] rounded-lg"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd"
+              d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z"
+              clip-rule="evenodd" />
+          </svg>
+          Meals</a>
+      </nav>
+    </aside>
 
-            <!-- Card -->
-            <div class="bg-[#111] p-6 rounded-xl flex flex-col items-center">
-              <h3 class="mb-4">Hostel 1</h3>
-              <div class="relative w-36 h-36">
-                <div class="absolute inset-0 rounded-full border-[12px] border-gray-700"></div>
-                <div class="absolute inset-0 rounded-full border-[12px] border-cyan-400 border-t-transparent border-l-transparent rotate-180"></div>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 overflow-y-auto">
+
+
+
+      <div class="grid grid-cols-3 gap-6">
+
+        <!-- Left Content -->
+        <div class="col-span-2 space-y-6">
+
+          <!-- Occupancy -->
+          <div class="bg-[#1a1a1a] p-6 rounded-xl">
+            <h2 class="mb-6 text-lg font-semibold">Occupancy</h2>
+
+            <div class="grid grid-cols-3 gap-6">
+
+              <!-- Card -->
+              <div class="bg-[#111] p-6 rounded-xl flex flex-col items-center">
+                <h3 class="mb-4">Hostel 1</h3>
+                <div class="relative w-36 h-36">
+                  <div class="absolute inset-0 rounded-full border-[12px] border-gray-700"></div>
+                  <div
+                    class="absolute inset-0 rounded-full border-[12px] border-cyan-400 border-t-transparent border-l-transparent rotate-180">
+                  </div>
+                  <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">50%</div>
+                </div>
+              </div>
+
+              <div class="bg-[#111] p-6 rounded-xl flex flex-col items-center">
+                <h3 class="mb-4">Hostel 2</h3>
+                <div class="relative w-36 h-36">
+                  <div class="absolute inset-0 rounded-full border-[12px] border-gray-700"></div>
+                  <div
+                    class="absolute inset-0 rounded-full border-[12px] border-yellow-400 border-l-transparent rotate-45">
+                  </div>
+                  <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">75%</div>
+                </div>
+              </div>
+
+              <div class="bg-[#111] p-6 rounded-xl flex flex-col items-center">
+                <h3 class="mb-4">Hostel 3</h3>
+                <div class="relative w-36 h-36">
+                  <div class="absolute inset-0 rounded-full border-[12px] border-gray-700"></div>
+                  <div
+                    class="absolute inset-0 rounded-full border-[12px] border-pink-500 border-l-transparent rotate-90">
+                  </div>
+                  <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">95%</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Fees Collection -->
+          <div class="bg-[#1a1a1a] p-6 rounded-xl">
+            <h2 class="mb-6 text-lg font-semibold">Fees Collection</h2>
+
+            <div class="grid grid-cols-2 gap-6 items-center">
+
+              <div class="relative w-44 h-44 mx-auto">
+                <div class="absolute inset-0 rounded-full border-[16px] border-gray-700"></div>
+                <div
+                  class="absolute inset-0 rounded-full border-[16px] border-cyan-400 border-l-transparent rotate-180">
+                </div>
                 <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">50%</div>
               </div>
-            </div>
 
-            <div class="bg-[#111] p-6 rounded-xl flex flex-col items-center">
-              <h3 class="mb-4">Hostel 2</h3>
-              <div class="relative w-36 h-36">
-                <div class="absolute inset-0 rounded-full border-[12px] border-gray-700"></div>
-                <div class="absolute inset-0 rounded-full border-[12px] border-yellow-400 border-l-transparent rotate-45"></div>
-                <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">75%</div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-[#111] p-4 rounded-lg">
+                  <p class="text-gray-400">Expected</p>
+                  <p class="text-lg font-semibold">₹ 52,00,000</p>
+                </div>
+
+                <div class="bg-[#111] p-4 rounded-lg">
+                  <p class="text-gray-400">Remaining</p>
+                  <p class="text-yellow-400 font-semibold">₹ 15,60,000</p>
+                </div>
+
+                <div class="bg-[#111] p-4 rounded-lg">
+                  <p class="text-gray-400">Collected</p>
+                  <p class="text-cyan-400 font-semibold">₹ 26,00,000</p>
+                </div>
+
+                <div class="bg-[#111] p-4 rounded-lg">
+                  <p class="text-gray-400">Overdue</p>
+                  <p class="text-pink-500 font-semibold">₹ 10,40,000</p>
+                </div>
               </div>
-            </div>
 
-            <div class="bg-[#111] p-6 rounded-xl flex flex-col items-center">
-              <h3 class="mb-4">Hostel 3</h3>
-              <div class="relative w-36 h-36">
-                <div class="absolute inset-0 rounded-full border-[12px] border-gray-700"></div>
-                <div class="absolute inset-0 rounded-full border-[12px] border-pink-500 border-l-transparent rotate-90"></div>
-                <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">95%</div>
-              </div>
             </div>
-
           </div>
+
+          <!-- Complaints -->
+          <div class="bg-[#1a1a1a] p-6 rounded-xl">
+            <h2 class="mb-6 text-lg font-semibold">Complaints</h2>
+
+            <div class="grid grid-cols-3 gap-4">
+              <div class="bg-[#111] p-4 rounded-lg">
+                <p>Total Complaints</p>
+                <p class="text-2xl font-bold">158</p>
+              </div>
+              <div class="bg-[#111] p-4 rounded-lg">
+                <p>Resolved</p>
+                <p class="text-cyan-400 text-2xl font-bold">96</p>
+              </div>
+              <div class="bg-[#111] p-4 rounded-lg">
+                <p>Open</p>
+                <p class="text-yellow-400 text-2xl font-bold">62</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Fees Collection -->
-        <div class="bg-[#1a1a1a] p-6 rounded-xl">
-          <h2 class="mb-6 text-lg font-semibold">Fees Collection</h2>
+        <!-- Right Panel -->
+        <div class="space-y-6">
 
-          <div class="grid grid-cols-2 gap-6 items-center">
+          <!-- Student Update -->
+          <div class="bg-[#1a1a1a] p-6 rounded-xl">
+            <h2 class="mb-4 font-semibold">Student Update</h2>
 
-            <div class="relative w-44 h-44 mx-auto">
-              <div class="absolute inset-0 rounded-full border-[16px] border-gray-700"></div>
-              <div class="absolute inset-0 rounded-full border-[16px] border-cyan-400 border-l-transparent rotate-180"></div>
-              <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">50%</div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-              <div class="bg-[#111] p-4 rounded-lg">
-                <p class="text-gray-400">Expected</p>
-                <p class="text-lg font-semibold">₹ 52,00,000</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 bg-[#111] p-3 rounded-lg">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <p>Ramakant Sharma</p>
+                  <p class="text-xs text-gray-400">12:30</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 bg-[#111] p-3 rounded-lg">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <p>Ramakant Sharma</p>
+                  <p class="text-xs text-gray-400">12:30</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 bg-[#111] p-3 rounded-lg">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <p>Ramakant Sharma</p>
+                  <p class="text-xs text-gray-400">12:30</p>
+                </div>
               </div>
 
-              <div class="bg-[#111] p-4 rounded-lg">
-                <p class="text-gray-400">Remaining</p>
-                <p class="text-yellow-400 font-semibold">₹ 15,60,000</p>
+              <!-- Duplicate for list -->
+              <div class="flex items-center gap-3 bg-[#111] p-3 rounded-lg">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+                <div>
+                  <p>Ramakant Sharma</p>
+                  <p class="text-xs text-gray-400">12:30</p>
+                </div>
               </div>
-
-              <div class="bg-[#111] p-4 rounded-lg">
-                <p class="text-gray-400">Collected</p>
-                <p class="text-cyan-400 font-semibold">₹ 26,00,000</p>
-              </div>
-
-              <div class="bg-[#111] p-4 rounded-lg">
-                <p class="text-gray-400">Overdue</p>
-                <p class="text-pink-500 font-semibold">₹ 10,40,000</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Complaints -->
-        <div class="bg-[#1a1a1a] p-6 rounded-xl">
-          <h2 class="mb-6 text-lg font-semibold">Complaints</h2>
-
-          <div class="grid grid-cols-3 gap-4">
-            <div class="bg-[#111] p-4 rounded-lg">
-              <p>Total Complaints</p>
-              <p class="text-2xl font-bold">158</p>
-            </div>
-            <div class="bg-[#111] p-4 rounded-lg">
-              <p>Resolved</p>
-              <p class="text-cyan-400 text-2xl font-bold">96</p>
-            </div>
-            <div class="bg-[#111] p-4 rounded-lg">
-              <p>Open</p>
-              <p class="text-yellow-400 text-2xl font-bold">62</p>
             </div>
           </div>
+
+          <!-- Emergency -->
+          <div class="bg-[#1a1a1a] p-6 rounded-xl text-center">
+            <div class="w-32 h-32 mx-auto bg-red-900 rounded-full flex items-center justify-center mb-6">
+              <div class="w-16 h-16 bg-red-600 rounded-full"></div>
+            </div>
+            <p class="mb-4 text-sm text-gray-400">Press only in Case of Emergency</p>
+            <button class="w-full bg-red-600 py-3 rounded-lg font-semibold hover:bg-red-700">
+              EMERGENCY
+            </button>
+          </div>
+
         </div>
 
       </div>
 
-      <!-- Right Panel -->
-      <div class="space-y-6">
+    </main>
 
-        <!-- Student Update -->
-        <div class="bg-[#1a1a1a] p-6 rounded-xl">
-          <h2 class="mb-4 font-semibold">Student Update</h2>
-
-          <div class="space-y-4">
-            <div class="flex items-center gap-3 bg-[#111] p-3 rounded-lg">
-              <div class="w-10 h-10 bg-gray-600 rounded-full"></div>
-              <div>
-                <p>Ramakant Sharma</p>
-                <p class="text-xs text-gray-400">12:30</p>
-              </div>
-            </div>
-            <!-- Duplicate for list -->
-            <div class="flex items-center gap-3 bg-[#111] p-3 rounded-lg">
-              <div class="w-10 h-10 bg-gray-600 rounded-full"></div>
-              <div>
-                <p>Ramakant Sharma</p>
-                <p class="text-xs text-gray-400">12:30</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Emergency -->
-        <div class="bg-[#1a1a1a] p-6 rounded-xl text-center">
-          <div class="w-32 h-32 mx-auto bg-red-900 rounded-full flex items-center justify-center mb-6">
-            <div class="w-16 h-16 bg-red-600 rounded-full"></div>
-          </div>
-          <p class="mb-4 text-sm text-gray-400">Press only in Case of Emergency</p>
-          <button class="w-full bg-red-600 py-3 rounded-lg font-semibold hover:bg-red-700">
-            EMERGENCY
-          </button>
-        </div>
-
-      </div>
-
-    </div>
-
-  </main>
-
-</div>
+  </div>
 
 </body>
+
 </html>
